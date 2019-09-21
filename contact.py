@@ -39,6 +39,7 @@ def delete_contact(contact_list, name):
         if contact.name == name:
             del contact_list[i]
 
+#연락처 저장 함수 wt사용
 def store_contact(contact_list):
     f = open("contact_db.txt", "wt")
     for contact in contact_list:
@@ -48,10 +49,29 @@ def store_contact(contact_list):
         f.write(contact.addr+'\n')
     f.close()
 
+#연락처 불러오기 함수 rt사용
+def load_contact(contact_list):
+    f = open("contact_db.txt", "rt")
+    lines = f.readlines()
+    #연락처 하나당 4줄 이니까
+    num = len(lines) / 4
+    num = int(num)
+    
+    for i in range(num):
+        name = lines[4*i].rstrip('\n') # 문자열 끝에 있는 개행을 지우는 rstrip('\n')
+        phone = lines[4*i+1].rstrip('\n')
+        email = lines[4*i+2].rstrip('\n')
+        addr = lines[4*i+3].rstrip('\n')
+        contact = Contact(name, phone, email, addr)
+        contact_list.append(contact)
+    f.close()
+
+        
 def run():
     kim = Contact('전용석', '010-7224-9221', 'aos31323@naver.com', 'Seoul')
     kim.print_info()
     contact_list = []
+    load_contact(contact_list)
     # set_contact()
     while 1:
         menu = print_menu()
