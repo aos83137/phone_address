@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3b853ac-8e61-4dda-9cbf-30bccfff446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Binary search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Queue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/problem.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
