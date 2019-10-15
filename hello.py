@@ -473,3 +473,32 @@
 #     value = int(input())
 # print(sum(varr)/len(varr))
 
+# list = [1,7,3,8,5,9]
+# flag=0
+# for i in range(len(list)):
+#     flag = i
+#     for j in range(i,len(list)):
+#         if list[flag] > list[j]:
+#             flag = j
+#     list[flag], list[i] = list[i],list[flag]
+#
+# print(list)
+
+# list = [55,1,78,12,42]
+# for i in range(len(list)):
+#     for j in range(len(list)-i-1):
+#         print(j)
+#         if list[j] > list[j+1]:
+#             list[j], list[j+1] = list[j+1], list[j]
+#         print(list)
+
+# list = [1,3,5,7,2,8,4,6,9]
+#
+# for i in range(len(list)):
+#     for j in range(i,0,-1):
+#         print(j)
+#         if list[j-1] > list[j]:
+#             list[j-1], list[j] = list[j], list[j-1]
+#             # print(list)
+#
+#     print('==========')
